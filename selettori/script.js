@@ -1,7 +1,7 @@
 // Selettore con l'id
 let titolo = document.getElementById('titolo');
 titolo.innerText = 'Titolo da JS';
-titolo.style.color = '#ffbbcc';
+titolo.style.color = '#ffbbcc'; 
 
 // Possiamo utilizzare i selettori css
 
