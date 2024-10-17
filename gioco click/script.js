@@ -5,3 +5,5 @@ function onStartClick(){
 }
 
 pulsanteStart.addEventListener('click', onStartClick)
+
+// Usero setInterval per fare il timer
