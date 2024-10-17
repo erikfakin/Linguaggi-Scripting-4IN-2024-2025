@@ -26,7 +26,7 @@ function onTimerUpdate(){
     time = Date.now() - startTime
     timer.innerHTML = "Tempo trascorso: " + time / 1000; 
     total.innerHTML = "Click totali: " + clickTotali;
-    cps.innerHTML = "CPS: " + clickTotali / (time / 1000);
+    cps.innerHTML = "CPS: " + (clickTotali / (time / 1000)).toFixed(2);
     if(time >= 5000){
         clearInterval(idInterval);
         hasStarted = false;
