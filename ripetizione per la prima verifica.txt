@@ -1,0 +1,249 @@
+﻿1. Quale tag HTML è utilizzato per includere uno script JavaScript in una pagina web?
+A) `<js>`
+B) `<javascript>`
+C) `<script>`
+D) `<code>`
+
+
+ 2. Come si dichiara una variabile in JavaScript utilizzando `let`?
+A) `x = 10;`
+B) `let x = 10;`
+C) `x let = 10;`
+D) `var x = 10;`
+
+
+ 3. Qual è il risultato della seguente espressione?  
+
+
+```
+let x = 5;
+x++;
+```
+A) x diventa 5
+B) x diventa 6
+C) x diventa 0
+D) x diventa undefined
+
+
+ 4. Qual è la sintassi corretta per una funzione in JavaScript?
+A) `function myFunction[] {}`
+B) `function myFunction() {}`
+C) `def myFunction() {}`
+D) function: myFunction() {}
+
+
+ 5. Quale metodo viene utilizzato per aggiungere un evento `click` a un elemento HTML in JavaScript?
+A) `addEventListener()`
+B) `attachEvent()`
+C) `setEventListener()`
+D) `onClick()`
+
+
+ 6. Cos’è il DOM in JavaScript?
+A) È il protocollo HTTP
+B) È un modello ad oggetti che rappresenta la struttura di una pagina web
+C) È un database per salvare i dati delle pagine
+D) È una funzione di animazione
+
+
+
+
+
+
+
+
+
+
+
+
+7. Qual è la funzione per ottenere un elemento HTML per id in JavaScript?
+A) `getElementById()`
+B) `querySelector()`
+C) `getElementByClass()`
+D) `getElementByName()`
+
+
+ 8. Come accedere e modificare il contenuto HTML di un elemento con id "demo"?
+```
+document.getElementById("demo").innerHTML = "Nuovo contenuto";
+```
+A) Vero
+B) Falso
+
+
+ 9. Come si cambia il colore di sfondo di un elemento HTML tramite il suo oggetto `style`?
+```
+document.getElementById("myElement").style.backgroundColor = "red";
+```
+A) Vero
+B) Falso
+
+
+ 10. Quale operatore JavaScript restituisce il valore massimo tra due numeri?
+A) `Math.min()`
+B) `Math.max()`
+C) `Math.abs()`
+D) `Math.floor()`
+
+
+ 11. Come dichiarare un array in JavaScript?
+A) `let arr = [1, 2, 3];`
+B) `let arr = (1, 2, 3);`
+C) `let arr = {1, 2, 3};`
+D) `let arr = new Array(1, 2, 3);`
+
+
+ 12. Quale metodo JavaScript restituisce la lunghezza di un array?
+A) `length()`
+B) `getLength()`
+C) `length`
+D) `size()`
+
+
+ 13. Come si accede al terzo elemento di un array `arr`?
+A) `arr(2)`
+B) `arr[2]`
+C) `arr[3]`
+D) `arr.get(2)`
+
+
+ 
+
+
+
+
+
+
+14. Quale di questi metodi è utilizzato per aggiungere un elemento alla fine di un array?
+A) `push()`
+B) `pop()`
+C) `shift()`
+D) `unshift()`
+
+
+ 15. Quale delle seguenti affermazioni è corretta riguardo le stringhe in JavaScript?
+A) Le stringhe in JavaScript sono mutabili
+B) Le stringhe in JavaScript sono immutabili
+C) Le stringhe in JavaScript non supportano metodi
+D) Le stringhe in JavaScript non possono contenere spazi
+
+
+ 16. Come si crea un timer che esegue una funzione dopo 3 secondi in JavaScript?
+A) `setTimeout(function, 3000);`
+B) `setInterval(function, 3000);`
+C) `setDelay(function, 3000);`
+D) `startTimeout(function, 3000);`
+
+
+ 17. Quale metodo viene utilizzato per eseguire una funzione ripetutamente a intervalli di tempo regolari?
+A) `setInterval()`
+B) `setTimeout()`
+C) `clearTimeout()`
+D) `clearInterval()`
+
+
+ 18. Qual è il tipo di dato restituito da `typeof "hello"`?
+A) `number`
+B) `boolean`
+C) `string`
+D) `object`
+
+
+ 19. Qual è la sintassi per gestire un errore in JavaScript?
+A) `try { ... } catch() { ... }`
+B) `try { ... } finally { ... }`
+C) `catch { ... }`
+D) `catch() { ... }`
+
+
+ 20. Cos'è un oggetto in JavaScript?
+A) Un insieme di variabili
+B) Una sequenza di stringhe
+C) Una collezione di proprietà e metodi
+D) Una funzione matematica
+
+
+ 21. Come si definisce una funzione che accetta due argomenti `a` e `b`?
+A) `function myFunction(a, b) {}`
+B) `function myFunction{a, b} {}`
+C) `function myFunction(a; b) {}`
+D) `myFunction(a, b) {}`
+
+
+ 22. Come si può fermare un ciclo `for` prima che arrivi alla sua condizione finale?
+A) `continue`
+B) `break`
+C) `stop`
+D) `exit`
+
+
+ 23. Qual è la sintassi corretta per una funzione freccia (arrow function) in JavaScript?
+A) `function => {}` 
+B) `(a, b) => {}` 
+C) `function(a, b) => {}` 
+D) `(a, b) -> {}` 
+
+
+ 24. Cosa accade se si prova a accedere a una proprietà di un oggetto non esistente in JavaScript?
+A) L'oggetto restituisce `null`
+B) Si ottiene un errore
+C) Si ottiene `undefined`
+D) L'oggetto si distrugge
+
+
+
+
+25. Qual è il risultato dell'espressione seguente in JavaScript?  
+```
+let a = [1, 2];
+let b = a;
+b[0] = 3;
+console.log(a[0]);
+```
+A) 1
+B) 2
+C) 3
+D) undefined
+
+
+26. Cosa restituisce `document.querySelectorAll('.myClass')`?
+A) Il primo elemento con la classe `.myClass`
+B) Un array con tutti gli elementi con la classe `.myClass`
+C) Una NodeList con tutti gli elementi con la classe `.myClass`
+D) Un oggetto con tutte le classi `.myClass`
+
+
+27. Qual è la differenza principale tra `let` e `const` in JavaScript?
+A) `let` è utilizzato per dichiarare variabili a livello globale, mentre `const` per variabili locali
+B) `let` permette di riassegnare valori, mentre `const` no
+C) `const` è una dichiarazione di variabile che può essere ridefinita
+D) Non c'è alcuna differenza, sono intercambiabili
+
+
+28. Qual è il risultato dell'espressione seguente?  
+```
+const obj = { a: 1 };
+obj = { a: 2 };
+```
+A) L'oggetto `obj` sarà aggiornato a `{ a: 2 }`
+B) Genera un errore di assegnazione, perché `obj` è un `const`
+C) Non succede nulla
+D) `obj` diventa un array vuoto
+
+
+
+
+
+
+29. Come si crea una funzione anonima in JavaScript?
+1.  `function myFunction() {}`
+2. `function() {}`
+3. `let myFunction = function() {};`
+4. `let myFunction = function myFunction() {};`
+
+
+30. Come si aggiunge un event listener di tipo click su un elemento con id=”button”?
+1. document.getElement(“button”).addEventListener(“click”, …)
+2. document.querySelector(“button”).addEventListener(“click”, …)
+3. document.getElementById(“button”).addEventListener(“click”, …)
+4. window.getElementByName(“button”).addEventListener(“click”, …)
