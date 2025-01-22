@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Inviaci un messaggio</h1>
-    <form>
+    <form method="post" action="/manda-email.php">
         <label>Nome: </label>
         <input type="text" name="nome">
         <br>
