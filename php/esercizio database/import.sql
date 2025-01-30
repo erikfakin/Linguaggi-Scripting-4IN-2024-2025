@@ -1,7 +1,3 @@
--- Create the database
-CREATE DATABASE ecommerce;
-USE ecommerce;
-
 -- Users Table
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -26,6 +22,7 @@ CREATE TABLE products (
     price DECIMAL(10,2) NOT NULL,
     category_id INT,
     stock INT DEFAULT 0,
+    image_url VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE SET NULL
 );
@@ -77,17 +74,17 @@ INSERT INTO users (name, email, password, address) VALUES
 
 INSERT INTO categories (name) VALUES ('Electronics'), ('Books'), ('Clothing'), ('Home Appliances'), ('Toys');
 
-INSERT INTO products (name, description, price, category_id, stock) VALUES
-('Smartphone', 'Latest model smartphone with 128GB storage', 699.99, 1, 50),
-('Laptop', 'Powerful laptop with 16GB RAM and 512GB SSD', 1299.99, 1, 30),
-('Novel', 'Best-selling fiction novel', 19.99, 2, 100),
-('T-shirt', '100% cotton T-shirt', 9.99, 3, 200),
-('Microwave', 'High efficiency microwave oven', 199.99, 4, 40),
-('Gaming Console', 'Next-gen gaming console', 499.99, 1, 20),
-('Headphones', 'Noise-cancelling over-ear headphones', 199.99, 1, 60),
-('Board Game', 'Fun family board game', 29.99, 5, 80),
-('Dress', 'Stylish summer dress', 39.99, 3, 150),
-('Refrigerator', 'Energy-efficient refrigerator', 899.99, 4, 15);
+INSERT INTO products (name, description, price, category_id, stock, image_url) VALUES
+('Smartphone', 'Latest model smartphone with 128GB storage', 699.99, 1, 50, 'images/smartphone.jpg'),
+('Laptop', 'Powerful laptop with 16GB RAM and 512GB SSD', 1299.99, 1, 30, 'images/laptop.jpg'),
+('Novel', 'Best-selling fiction novel', 19.99, 2, 100, 'images/novel.jpg'),
+('T-shirt', '100% cotton T-shirt', 9.99, 3, 200, 'images/tshirt.jpg'),
+('Microwave', 'High efficiency microwave oven', 199.99, 4, 40, 'images/microwave.jpg'),
+('Gaming Console', 'Next-gen gaming console', 499.99, 1, 20, 'images/console.jpg'),
+('Headphones', 'Noise-cancelling over-ear headphones', 199.99, 1, 60, 'images/headphones.jpg'),
+('Board Game', 'Fun family board game', 29.99, 5, 80, 'images/boardgame.jpg'),
+('Dress', 'Stylish summer dress', 39.99, 3, 150, 'images/dress.jpg'),
+('Refrigerator', 'Energy-efficient refrigerator', 899.99, 4, 15, 'images/refrigerator.jpg');
 
 INSERT INTO orders (user_id, total, status) VALUES
 (1, 719.98, 'Pending'),
