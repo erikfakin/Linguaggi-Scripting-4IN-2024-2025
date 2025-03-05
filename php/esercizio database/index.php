@@ -8,6 +8,10 @@ $prodotti = $result->fetch_all(MYSQLI_ASSOC);
 // print_r($prodotti);
 
 foreach($prodotti as $prodotto){
+
+    if ($prodotto["deleted_at"] !== NULL){
+        continue;
+    }
     ?>
     <div>
         <img width=300 src="<?php echo $prodotto['image_url'] ?>">
