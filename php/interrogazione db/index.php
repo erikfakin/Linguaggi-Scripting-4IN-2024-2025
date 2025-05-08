@@ -12,8 +12,6 @@ $pagamenti = $db->query("SELECT * FROM PAYMENTS");
 $pagamenti = $pagamenti->fetch_all(MYSQLI_ASSOC);
 // per ogni payment aggiungere una riga in tabella
 
-print_r($pagamenti);
-
 ?>
 <table>
     <tr>
@@ -48,3 +46,40 @@ foreach($pagamenti as $pagamento){
 ?>
 
 </table>
+
+<h2>Aggiungi Nuovo Pagamento</h2>
+
+    <form action="/aggiungi-pagamento.php" method="POST">
+        <div>
+            <label for="order_id">Order ID:</label>
+            <input type="text" id="order_id" name="order_id" required>
+        </div>
+
+        <div>
+            <label for="amount">Importo (€):</label>
+            <input type="number" id="amount" name="amount" step="0.01" required>
+        </div>
+
+        <div>
+            <label for="payment_method">Metodo di pagamento:</label>
+            <select id="payment_method" name="payment_method" required>
+                <option value="credit_card">Carta di credito</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank_transfer">Bonifico bancario</option>
+                <option value="cash">Contante</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="status">Stato del pagamento:</label>
+            <select id="status" name="status" required>
+                <option value="pending">In attesa</option>
+                <option value="completed">Completato</option>
+                <option value="failed">Fallito</option>
+                <option value="refunded">Rimborsato</option>
+            </select>
+        </div>
+
+        
+        <button type="submit">Aggiungi Pagamento</button>
+    </form>
